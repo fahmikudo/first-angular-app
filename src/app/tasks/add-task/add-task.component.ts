@@ -6,10 +6,9 @@ import { TasksService } from '../tasks.service';
 
 @Component({
     selector: 'app-add-task',
-    standalone: true,
+    standalone: false,
     templateUrl: './add-task.component.html',
     styleUrl: './add-task.component.css',
-    imports: [FormsModule, CommonModule],
 })
 export class AddTaskComponent {
     @Input({ required: true }) userId!: string;
